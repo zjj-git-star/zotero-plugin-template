@@ -4,7 +4,7 @@ import { config } from "../package.json";
 
 const basicTool = new BasicTool();
 
-// @ts-expect-error - Plugin instance is not type d 
+// @ts-expect-error - Plugin instance is not type d jjj
 if (!basicTool.getGlobal("Zotero")[config.addonInstance]) {
   _globalThis.addon = new Addon();
   defineGlobal("ztoolkit", () => {
